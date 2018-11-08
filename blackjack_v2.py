@@ -111,7 +111,12 @@ def show_some(player,dealer):
     print("\nDealer's Hand:")
     print(" <card hidden>")
     print('',dealer.cards[1])  
-    print("\nPlayer's Hand:", *player.cards, sep='\n ')
+    print("\nPlayer's Hand: ", *player.cards, sep='\n ')
+    '''Equal to:
+    print("\nPlayer's Hand: ")
+    for pc in player.cards:
+        print('',pc)
+    '''
     
 def show_all(player,dealer):
     print("\nDealer's Hand:", *dealer.cards, sep='\n ')
